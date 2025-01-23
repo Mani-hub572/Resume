@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Meesho Clone</title>
+
+</head>
+<body>
+    <nav>
+        <!-- Logo -->
+        <div class="logo">Meesho</div>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+            <button>Search</button>
+        </div>
+
+        <!-- Hamburger menu (mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="menu">
+            <li><a href="meesho.html">Home</a></li>
+            <li><a href="categories.html">Categories</a>
+                <ul class="dropdown">
+                    <li><a href="clothing.html">Clothing</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="#">Home & Kitchen</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+    <!-- Banner -->
+    <div class="banner">
+        <img src="random.jpg" class="img-fluid" alt="cover">
+    </div>
+
+    <!-- Categories Section -->
+
+    <section class="categories">
+        <h2>Featured Categories</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <img src="kurti.webp" alt="Category 1">
+                <h3>Clothing</h3>
+                <p class="card-text">Chikankari Short Kurti</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+            <div class="category-item">
+                <img src="electronic.jpeg" alt="Category 2">
+                <h3>Electronics</h3>
+                <p class="card-text">Earbuds Pro Noise</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+            <div class="category-item">
+                <img src="saree.jpg" alt="Category 3">
+                <h3>Saree</h3>
+                <p class="card-text">Women Thread Work Sarees Striped Sari</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+            <div class="category-item">
+                <img src="boy1.webp" alt="Category 1">
+                <h3>Clothing</h3>
+                <p class="card-text">Orignal Men’s FANCY Ethnic Jackets</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+    
+            <div class="category-item">
+                <img src="grinder.jpg" alt="Category 3">
+                <h3>Home & Kitchen</h3>
+                <p class="card-text"> Moonstruck ultra powerful copper winding mixer</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+     
+    </section>
+
+    <!-- Popular Products Section -->
+    <section class="products">
+        <h2>Popular Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="mix.webp" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+            </div>
+            <div class="product-item">
+                <img src="pro3.webp" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$20.00</p>
+            </div>
+            <div class="product-item">
+                <img src="bag.webp" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$30.00</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Meesho Clone. All Rights Reserved.</p>
+     <div class="social-icons mt-2">
+        <a href="https://www.instagram.com/meeshoapp/reels/?hl=en" target="_blank" class="text-white mx-2">
+            <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
+            <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-white mx-2">
+            <i class="fab fa-twitter fa-lg"></i>
+        </a>
+    </div>
+</footer> 
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

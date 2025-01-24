@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Products - Meesho Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav>
+        <!-- Logo -->
+        <div class="logo">Meesho</div>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+            <button>Search</button>
+        </div>
+
+        <!-- Hamburger menu (mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="menu">
+            <li><a href="meesho.html">Home</a></li>
+            <li><a href="categories.html">Categories</a>
+                <ul class="dropdown">
+                    <li><a href="clothing.html">Clothing</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="#">Home & Kitchen</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Popular Products Section -->
+    <section class="products">
+        <h2>Popular Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="mix.webp" alt="Product 1">
+                <h3>Mini Mixture Grinder with Sharp Blades </h3>
+                <p>$180.00</p>
+            </div>
+            <div class="product-item">
+                <img src="pro3.webp" alt="Product 2">
+                <h3>Casual Fancy Hoodie for Girls and Boys</h3>
+                <p>$200.00</p>
+            </div>
+            <div class="product-item">
+                <img src="bag.webp" alt="Product 3">
+                <h3>Sling bag for girls,ladies mini bag</h3>
+                <p>$180.00</p>
+            </div>
+
+         <div class="product-item">
+                <img src="M.webp" alt="Product 4">
+                <h3>Cosmetic Storage Makeup Drawer Organizer Portable</h3>
+                <p>$150.00</p>
+            </div>
+            <div class="product-item">
+                <img src="M1.webp" alt="Product 5">
+                <h3>New esthetic Makeup Brush Holder</h3>
+                <p>$90.00</p>
+            </div>
+            <div class="product-item">
+                <img src="M2.webp" alt="Product 6">
+                <h3> Cleansing Cream with Aloe vera and Coconut Water</h3>
+                <p>$100.00</p>
+            </div>
+            <div class="product-item">
+                <img src="Sun-Glasses.webp" alt="Product 7">
+                <h3>Oval Sunglasses for Women Classic Metal Frame</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-item">
+                <img src="bag1.webp" alt="Product 8">
+                <h3>Black Color Waterproof Classy Belt Bag</h3>
+                <p>$80.00</p>
+            </div>
+            <div class="product-item">
+                <img src="Slipper.webp" alt="Product 9">
+                <h3>comfortable casual partywear n daily wear eva flipflop </h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-item">
+                <img src="Nail.webp" alt="Product 10">
+                <h3>Banetion Nail Polish Matte Colors</h3>
+                <p>$30.00</p>
+            </div>
+        </div>
+    </section> 
+
+   <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Meesho Clone. All Rights Reserved.</p>
+     <div class="social-icons mt-2">
+        <a href="https://www.instagram.com/meeshoapp/reels/?hl=en" target="_blank" class="text-white mx-2">
+            <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
+            <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-white mx-2">
+            <i class="fab fa-twitter fa-lg"></i>
+        </a>
+    </div>
+</footer> 
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
